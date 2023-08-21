@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website-Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <section class="sub-header">
+
+        <nav>
+
+            <a href="#index.html"><img src="images/logo.png" alt=""></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!--   Courses  -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error officiis enim eius
+                    corrupti
+                    ea natus non earum minus ut, neque laborum delectus quidem excepturi ullam unde officia autem
+                    ipsam!
+                </p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error officiis enim eius
+                    corrupti
+                    ea natus non earum minus ut, neque laborum delectus quidem excepturi ullam unde officia autem
+                    ipsam!
+                </p>
+            </div>
+
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error officiis enim eius
+                    corrupti
+                    ea natus non earum minus ut, neque laborum delectus quidem excepturi ullam unde officia autem
+                    ipsam!
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Facilities -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum repudiandae non omnis perspiciatis
+                    dicta iste ad, sed quas modi at eum culpa voluptas dolorem, quidem quam et reiciendis! Ratione.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="">
+                <h3>Best Basketball Team</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum repudiandae non omnis perspiciatis
+                    dicta iste ad, sed quas modi at eum culpa voluptas dolorem, quidem quam et reiciendis! Ratione.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="">
+                <h3>Welcom To Our Cafeteria</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum repudiandae non omnis perspiciatis
+                    dicta iste ad, sed quas modi at eum culpa voluptas dolorem, quidem quam et reiciendis! Ratione.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, officia. Ad tempora vero iste <br> omnis
+            impedit sequi incidunt totam atque cumque enim! In ipsum explicabo porro!</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <br>
+        <p class="copyright">Made With <i class="fa-regular fa-heart"></i> <strong>LAZRAQ ZAKARIAE</strong> &copy; 2023
+            All Rights Reserved.</p>
+        </p>
+    </section>
+
+
+
+    <!-- **************************************JavaScript For Toggle Menu ***************************************-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+
+</html>
